@@ -208,9 +208,13 @@ let
     curveRate = pF "curveRate"
     harm = pF "harm"
     cutoff = pF "cutoff"
+    lpfstart = pF "lpfstart"
+    lpfend = pF "lpfend"
     cutoffspd = pF "cutoffspd"
+    stereorate = pF "stereorate"
     q = pF "q"
     rb = rarely (\x -> x # room 0.4 # size 0.9)
+    boost = (\x -> x # shape 0.4 # hpf 50 # hpq 0.2)
 :}
 
 :set prompt "tidal> "
