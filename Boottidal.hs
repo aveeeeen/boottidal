@@ -213,6 +213,28 @@ let
     cutoffspd = pF "cutoffspd"
     stereorate = pF "stereorate"
     q = pF "q"
+
+:}
+
+-- custom effect params
+:{
+let
+    hftan = pF "hfcrush"
+    hftanfreq = pF "hfcrushFreq"
+    lftan = pF "lfcrush"
+    lftanfreq = pF "lfcrushFreq"
+    hfsquiz = pF "hfsquiz"
+    hfsquizfreq = pF "hfsquizFreq"
+    lfsquiz = pF "lfsquiz"
+    lfsquizfreq = pF "lfsquizFreq"
+    down = pF "down"
+:}
+
+
+-- custom functions
+
+:{
+let    
     rb = rarely (\x -> x # room 0.4 # size 0.9)
     boost = (\x -> x # shape 0.4 # hpf 50 # hpq 0.2)
 :}
