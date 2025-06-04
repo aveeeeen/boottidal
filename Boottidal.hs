@@ -225,9 +225,9 @@ let
     lftanfreq = pF "lfcrushFreq"
     hfsquiz = pF "hfsquiz"
     hfsquizfreq = pF "hfsquizFreq"
-    lfsquiz = pF "lfsquiz"
-    lfsquizfreq = pF "lfsquizFreq"
     down = pF "down"
+    bitcrush = pF "bitcrush"
+    samplerate = pF "samplerate"
 :}
 
 
@@ -235,8 +235,9 @@ let
 
 :{
 let    
-    rb = rarely (\x -> x # room 0.4 # size 0.9)
+    rb = rarely (\x -> x # room 0.5 # size 0.9)
     boost = (\x -> x # shape 0.4 # hpf 50 # hpq 0.2)
+    flt speed = (\x -> x # lpf (speed $ range 10000 50 $ saw) # lpq 0.1 )
 :}
 
 :set prompt "tidal> "
