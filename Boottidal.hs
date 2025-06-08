@@ -228,6 +228,9 @@ let
     down = pF "down"
     bitcrush = pF "bitcrush"
     samplerate = pF "samplerate"
+    bufrd = pF "bufrd"
+    bufrate = pF "bufrate"
+    frz = pF "frz"
 :}
 
 
