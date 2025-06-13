@@ -204,6 +204,7 @@ let
     prate = pF "prate"
     modrate = pF "modRate"
     index = pF "index"
+    ringfreq = pF "ringfreq"
     contour = pF "contour"
     curveRate = pF "curveRate"
     harm = pF "harm"
@@ -232,6 +233,7 @@ let
     shortbuf = pF "shortbuf"
     bufrate = pF "bufrate"
     frz = pF "frz"
+    scram = pF "scram"
 :}
 
 
