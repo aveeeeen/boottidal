@@ -234,6 +234,18 @@ let
     bufrate = pF "bufrate"
     frz = pF "frz"
     scram = pF "scram"
+    shift = pF "shift"
+    stretch = pF "stretch"
+    cmap = pF "cmap"
+    conv = pF "conv"
+    comb = pF "mycomb"
+    comblen = pF "comblen"
+    combrate = pF "combrate"
+    mcomb = pF "mycomb"
+    mcomblen = pF "comblen"
+    mcombrate = pF "combrate"
+    fold = pF "fold"
+    foldrate = pF "foldrate"
 :}
 
 
