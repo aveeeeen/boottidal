@@ -256,6 +256,9 @@ let
     rb = rarely (\x -> x # room 0.5 # size 0.9)
     boost = (\x -> x # shape 0.4 # hpf 50 # hpq 0.2)
     flt speed = (\x -> x # lpf (speed $ range 10000 50 $ saw) # lpq 0.1 )
+    cunit patt = (while patt $ \x -> x # comb 1 # comblen 2 # combrate (choose [0.1, 0.05]))
+    autopan = pan (range 1 0 $ slow 3 rand)
+    defaultE = stretch 1 # cmap 0
 :}
 
 :set prompt "tidal> "
